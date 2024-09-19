@@ -487,7 +487,7 @@ def handle_bgmi(message):
         if user_id not in admin_id:
             # Join :- @DX4_CHEATS # Check if the user has run the command before and is still within the cooldown period
             if user_id in bgmi_cooldown and (datetime.datetime.now() - bgmi_cooldown[user_id]).seconds < 120:
-                response = "You Are On Cooldown . Please Wait 2min Before Running The /bgmi Command Again."
+                response = "You Are On Cooldown . Please Wait 0sec Before Running The /bgmi Command Again."
                 bot.reply_to(message, response)
                 return
             # Join :- @DX4_CHEATS # Update the last time the user ran the command
